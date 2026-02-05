@@ -1,5 +1,5 @@
 {
-  "name": "com.odu.behaviourTree",
+  "name": "com.odu.bt",
   "version": "1.0.0",
   "displayName": "Odu Behaviour Tree",
   "description": "Pacote de behaviour trees.",
