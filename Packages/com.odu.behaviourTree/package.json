@@ -1,0 +1,11 @@
+{
+  "name": "com.odu.behaviourTree",
+  "version": "1.0.0",
+  "displayName": "Odu Behaviour Tree",
+  "description": "Pacote de behaviour trees.",
+  "unity": "2021.3",
+  "author": {
+    "name": "João Rabello",
+    "email": "joaorabello1@gmail.com"
+  }
+}
