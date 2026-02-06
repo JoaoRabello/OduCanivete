@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 namespace Odu.Characters.ThreeDimensional
 {
-    public class ThirdPersonFreeLookMovement : MonoBehaviour
+    public class ThirdPersonTopVisionMovement : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Transform _visualTransform;
