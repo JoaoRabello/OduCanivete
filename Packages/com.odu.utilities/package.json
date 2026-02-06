@@ -1,0 +1,11 @@
+{
+  "name": "com.odu.utilities",
+  "version": "1.0.0",
+  "displayName": "Odu Utilities",
+  "description": "Pacote de utilidades.",
+  "unity": "2021.3",
+  "author": {
+    "name": "João Rabello",
+    "email": "joaorabello1@gmail.com"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "com.odu.designpatterns",
+  "version": "1.0.0",
+  "displayName": "Odu Design Patterns",
+  "description": "Pacote de design patterns.",
+  "unity": "2021.3",
+  "author": {
+    "name": "João Rabello",
+    "email": "joaorabello1@gmail.com"
+  }
+}
