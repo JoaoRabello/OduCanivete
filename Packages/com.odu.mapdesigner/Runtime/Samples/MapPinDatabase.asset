@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb0eab3984001e45a4737312b32b5ee, type: 3}
+  m_Name: MapPinDatabase
+  m_EditorClassIdentifier: 
+  _mapPinGroups:
+  - RelatedMap:
+      Name: A
+    Pins:
+    - Name: A1
+      Image: {fileID: 0}
+      Description: "Esse \xE9 o primeiro pin criado"
+      Position: {x: 0, y: 0, z: 0}
+      RelatedMap:
+        Name: A
+  - RelatedMap:
+      Name: A
+    Pins:
+    - Name: A2
+      Image: {fileID: 0}
+      Description: "Mais um pin gerado por voc\xEA"
+      Position: {x: 6, y: 0, z: 0}
+      RelatedMap:
+        Name: A
+  - RelatedMap:
+      Name: B
+    Pins:
+    - Name: B1
+      Image: {fileID: 0}
+      Description: 
+      Position: {x: 0, y: 0, z: 5}
+      RelatedMap:
+        Name: B
