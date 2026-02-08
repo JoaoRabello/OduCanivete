@@ -13,6 +13,8 @@ namespace OduLib.Systems.Characters
 
         public Action ChangeTypePerformed;
 
+        public Action JumpPerformed;
+
         private ThirdPersonMovement inputActions;
 
         private void OnEnable()
@@ -22,6 +24,7 @@ namespace OduLib.Systems.Characters
             inputActions.Movement.Move.performed += InputPerform;
             inputActions.Movement.Move.canceled += InputCancel;
             inputActions.Movement.Change.performed += Change;
+            inputActions.Movement.Jump.performed += Jump;
 
             inputActions.Enable();
         }
@@ -31,6 +34,7 @@ namespace OduLib.Systems.Characters
             inputActions.Movement.Move.performed -= InputPerform;
             inputActions.Movement.Move.canceled -= InputCancel;
             inputActions.Movement.Change.performed -= Change;
+            inputActions.Movement.Jump.performed -= Jump;
 
             inputActions.Disable();
         }
@@ -40,13 +44,23 @@ namespace OduLib.Systems.Characters
             ChangeTypePerformed?.Invoke();
         }
 
+        private void Jump(InputAction.CallbackContext context)
+        {
+            JumpPerformed?.Invoke();
+            CurrentCharacterMovement.JumpInputPerformed();
+        }
+
         private void InputPerform(InputAction.CallbackContext callbackContext)
         {
-            CurrentCharacterMovement.MoveInputPerformed(callbackContext.ReadValue<Vector2>());
+            var direction = callbackContext.ReadValue<Vector2>();
+
+            MovePerformed?.Invoke(direction);
+            CurrentCharacterMovement.MoveInputPerformed(direction);
         }
 
         private void InputCancel(InputAction.CallbackContext callbackContext)
         {
+            MoveCanceled?.Invoke();
             CurrentCharacterMovement.MoveInputCanceled();
         }
     }

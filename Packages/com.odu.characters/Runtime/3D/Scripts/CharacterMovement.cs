@@ -4,6 +4,7 @@ namespace OduLib.Systems.Characters
 {
     public class CharacterMovement : MonoBehaviour
     {
+        [SerializeField] protected SimpleJump _jump;
         protected Vector2 _movementDirection;
 
         public virtual void Enter()
@@ -25,6 +26,11 @@ namespace OduLib.Systems.Characters
         public void MoveInputCanceled()
         {
             _movementDirection = Vector2.zero;
+        }
+
+        public void JumpInputPerformed()
+        {
+            _jump.JumpInputPerformed();
         }
     }
 }
