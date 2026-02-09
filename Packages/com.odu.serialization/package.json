@@ -1,0 +1,11 @@
+{
+  "name": "com.odu.serialization",
+  "version": "1.0.0",
+  "displayName": "Odu Serialization",
+  "description": "Pacote de funcionalidades para serialização de dados.",
+  "unity": "2021.3",
+  "author": {
+    "name": "João Rabello",
+    "email": "joaorabello1@gmail.com"
+  }
+}
