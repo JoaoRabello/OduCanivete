@@ -1,3 +1,4 @@
+#if FMOD_PRESENT
 namespace OduLib.Canivete.Audio
 {
     /// <summary>
@@ -66,3 +67,4 @@ namespace OduLib.Canivete.Audio
         }
     }
 }
+#endif
