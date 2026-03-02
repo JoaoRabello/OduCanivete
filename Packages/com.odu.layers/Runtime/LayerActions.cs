@@ -21,12 +21,12 @@ namespace OduLib.Canivete.Layers{
         /// <summary>
         /// Verifica se uma camada específica está presente na máscara de camadas fornecida.
         /// </summary>
-        /// <param name="mask">A máscara de camadas a ser verificada.</param>
+        /// <param name="originalMask">A máscara de camadas a ser verificada.</param>
         /// <param name="layerToCheck">O índice da camada a ser procurada.</param>
         /// <returns>Retorna <c>true</c> se a camada está presente, caso contrário <c>false</c>.</returns>
-        public static bool ContainsLayer(LayerMask mask, LayerMask layerToCheck)
+        public static bool ContainsLayer(LayerMask originalMask, LayerMask layerToCheck)
         {
-            return (mask & (1 << layerToCheck)) != 0;
+            return (originalMask & (1 << layerToCheck)) != 0;
         }
 
         /// <summary>
